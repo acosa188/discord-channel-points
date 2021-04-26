@@ -7,7 +7,7 @@ const registerValidation = (data) => {
         userName: Joi.string().min(3).required(),
         userId: Joi.string().required()
     });
-
+    // validate data
     return schema.validate(data);
 }
 
